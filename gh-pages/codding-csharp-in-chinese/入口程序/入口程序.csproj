@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>入口程序</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="_框架代码\集合\**" />
+    <EmbeddedResource Remove="_框架代码\集合\**" />
+    <None Remove="_框架代码\集合\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\基础设施\基础设施.csproj" />
+  </ItemGroup>
+
+</Project>
